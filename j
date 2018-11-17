@@ -1,7 +1,4 @@
 aaaa
 asdadasdasd
 gg
-ssss
-dddd
-ddd
-ddd
+ss
