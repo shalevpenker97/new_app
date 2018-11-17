@@ -23,4 +23,4 @@ class MyTestClass(unittest.TestCase):
         result = self.app.get('/')
 
         # assert the response data
-        self.assertEqual(result.data, "Hello Wold!!!")
+        self.assertEqual(result.data, "Hello World!!!")
