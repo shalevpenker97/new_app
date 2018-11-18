@@ -6,7 +6,7 @@ def hello():
     return "Hello World!!!"
 @app.route("/login")
 def login():
-    return "login page"
+    return "login page succesful"
 @app.route("/menu")
 def menu():
     return "menu page"
