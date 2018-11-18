@@ -1,2 +1,4 @@
 # new_app
-new testing app
+This is a basic flask app
+
+The goal is to check the CICD pipeline
