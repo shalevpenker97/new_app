@@ -1,0 +1,10 @@
+---
+- hosts: webserver
+  tasks:
+  - name: Ansible copy file to remote server
+    copy:
+      src: /home/shalevpenker97/for_jenkins
+      dest: /home/
+  - name: run app on a remote machines container
+    shell: docker container restart app
+    
