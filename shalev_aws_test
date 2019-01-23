@@ -1,0 +1,67 @@
+#!/usr/bin/env python
+
+import boto3
+# ---------------------Made by shalev pinker ------------------
+# ---------------------
+# -------------------- Testing of boto3 usage------------------
+
+
+# This will get list of regions to iterate 
+##client = boto3.client('ec2',region_name='eu-west-1')
+##regions = [region['RegionName'] for region in client.describe_regions()['Regions']]
+##print regions
+#ec2 = boto3.client('ec2')
+
+
+
+
+# Connect to AWS with default configuration in ~/.aws/config 
+session = boto3.Session(profile_name='default')
+ec2 = boto3.resource('ec2',region_name='eu-west-1')
+#print ec2.volumes.all()
+
+# This will get volume id from the instance
+#instance = ec2.Instance('i-04bdb402371ee2d7e')
+#print instance.block_device_mappings[0]['Ebs']['VolumeId']
+
+# This will get the tag of the volume
+
+##for volume in ec2.volumes.all():
+##	print volume.volume_id
+##	print volume.tags
+
+
+
+
+
+# This will get all instances in the region
+##for instance in ec2.instances.all():
+	##print instance.instance_id
+	
+	# This will check if there is 0 tags to the instance 
+	#if not instance.tags:
+	
+		
+	 
+	#print type(instance.tags)
+
+
+# This will generate a list of images from the specified region according to filters
+##image_iterator = ec2.images.filter(
+##    Filters=[
+##        {
+##            'Name': 'tag:AutoAMI',
+##            'Values': [
+##                'True',
+##            ]
+##        },
+##    ],
+##)
+
+# This checks timestamp and will delete it if its over 30 days old 
+##for image in image_iterator:
+	#Delete images if date is (need to add import time module)
+	#x.deregister()
+	##print image.creation_date
+
+
