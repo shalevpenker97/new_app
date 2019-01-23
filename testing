@@ -1,0 +1,10 @@
+connect to instance 
+
+ssh -i /home/shalevpinker/Downloads/shalev_key.pem ubuntu@ec2-34-245-182-33.eu-west-1.compute.amazonaws.com
+
+topic_test : 
+
+arn:aws:sns:eu-west-1:785577579649:topic_test
+
+
+
