@@ -1,0 +1,23 @@
+Instruction  for uploading a lambda zip file:
+
+
+#if you want to use mysql >> import module pip install mysql-connector
+
+
+- mkdir "my_new_lambda"
+- virtualenv -p /usr/bin/python2.7 venv #create a virtual environment
+- source venv/bin/activate #get in your virtual environment
+- touch main.py #create your files to run
+## write your lambda function and your dependencies (import modules)
+- pip install requests (install your modules on the env )
+- pip freeze > req.txt (write the module dependencies to a file) 
+- pip install -r req.txt -t . (install all the dependencies on the env)
+- deactivate (get out of the virtual env)
+- rm -rf venv (remove virtual environment)
+- copy to your folder the compress.sh bash script and run it 
+- copy to your folder the publish.sh and run it (give your lambda  a name) 
+
+
+
+
+
